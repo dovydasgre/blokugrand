@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const uint32_t SHA256_INITIAL_HASH[] = {
+const uint32_t HASH_CODE[] = {
     0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
     0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19
 };
@@ -30,7 +30,7 @@ void readFile(string input) {
     }
 }
 
-uint32_t sha256Mix(uint32_t a, uint32_t b, uint32_t c) {
+uint32_t Mix(uint32_t a, uint32_t b, uint32_t c) {
     uint32_t temp1 = b >> 6 | b << (32 - 6);
     uint32_t temp2 = b >> 11 | b << (32 - 11);
     uint32_t temp3 = b >> 25 | b << (32 - 25);
@@ -47,11 +47,11 @@ uint32_t sha256Mix(uint32_t a, uint32_t b, uint32_t c) {
 std::string customHash(const std::string& input) {
     uint32_t hash[8];
 
-    std::memcpy(hash, SHA256_INITIAL_HASH, sizeof(SHA256_INITIAL_HASH));
+    std::memcpy(hash, HASH_CODE, sizeof(HASH_CODE));
 
     for (char c : input) {
         for (int i = 0; i < 8; ++i) {
-            hash[i] = sha256Mix(hash[i], hash[(i + 1) % 8], static_cast<uint32_t>(c));
+            hash[i] = Mix(hash[i], hash[(i + 1) % 8], static_cast<uint32_t>(c));
         }
     }
 
