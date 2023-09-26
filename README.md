@@ -52,11 +52,11 @@ print(hash_result)
 - File - oneSymbol1.txt, Hash - cb99ca78e175907b36e841fdcf7dd1db7326eb811c9def5b89f08adc2ce6a645
 - File - oneSymbol2.txt, Hash - cb99ca58e175905b36e841ddcf7dd1bb7326eb611c9def3b89f08abc30e6b5e5
 2. Du failai sudaryti iš daugiau nei 1000 atsitiktinai sugeneruotų simbolių:
-- File - 1001random1.txt, Hash - 812d43a68794a04d6c4d26d59b7fb07b6e58ae6c2b5ff6ec7a8a48fd9cada389
-- File - 1001random2.txt, Hash - 895a358b5194d6a61b5fbe21bc1ce1cc08a8c0bab3cfbd2c37bdc0fa1e020c6e
+- File - 1001random1.txt, Hash - bae1a0484274b2c886d637565eb05622dcd27f8230dc188f9706d75891f09b15
+- File - 1001random2.txt, Hash - 2239de4061446c38e014b2db65f0d4c7c29ba690566929fb1b0ef27430a5098d
 3. Du failai sudaryti iš daugiau nei 1000 simbolių, bet skiriasi vienu nuo kito tik vienu simboliu:
-- File - oneSymbolDiff1.txt, Hash - c904233a3706fb4604a5463100fd14f5d6f331060de59dbb66e28330a54d09ee
-- File - oneSymbolDiff2.txt, Hash - 6b1ef85d1a0ce2eb0a9be451308254ef0cc0111567638d4d648234c8bb425dd5
+- File - oneSymbolDiff1.txt, Hash - 64e115d63d986f8acfb1f4631a0c7fa12f13fca5786d8dc0f4180e4c405ca65e
+- File - oneSymbolDiff2.txt, Hash - c664d29d18365c888dc818e1712b53ebcd37159f5c50fc7aaa1dca0bfc37abd9
 4. Tuščias failas:
 - File - empty.txt, Hash - 6a09e667bb67ae853c6ef372a54ff53a510e527f9b05688c1f83d9ab5be0cd19
 5. Efektyvumas:
